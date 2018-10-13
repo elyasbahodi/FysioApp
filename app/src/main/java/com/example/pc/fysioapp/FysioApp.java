@@ -7,6 +7,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class FysioApp extends AppCompatActivity implements SensorEventListener {
 
@@ -15,6 +16,9 @@ public class FysioApp extends AppCompatActivity implements SensorEventListener {
     private long lastUpdate = 0;
     private float lastX, lastY, lastZ;
     private static final int SHAKE_THRESHOLD = 600;
+    private TextView dimensionXView = (TextView) findViewById(R.id.DimensionX);
+    private TextView dimensionYView = (TextView) findViewById(R.id.DimensionY);
+    private TextView dimensionZView = (TextView) findViewById(R.id.DimensionZ);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,10 @@ public class FysioApp extends AppCompatActivity implements SensorEventListener {
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(this, accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
+       // dimensionXView.setText(Float.toString(lastX));
+        //dimensionYView.setText(Float.toString(lastY));
+        //dimensionZView.setText(Float.toString(lastZ));
+
         // virker der 
     }
 
