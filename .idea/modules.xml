@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FysioApp.iml" filepath="$PROJECT_DIR$/FysioApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/externallibrary/externallibrary.iml" filepath="$PROJECT_DIR$/externallibrary/externallibrary.iml" />
     </modules>
   </component>
 </project>
