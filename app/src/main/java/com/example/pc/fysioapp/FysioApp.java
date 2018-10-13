@@ -16,9 +16,9 @@ public class FysioApp extends AppCompatActivity implements SensorEventListener {
     private long lastUpdate = 0;
     private float lastX, lastY, lastZ;
     private static final int SHAKE_THRESHOLD = 600;
-    private TextView dimensionXView = (TextView) findViewById(R.id.DimensionX);
-    private TextView dimensionYView = (TextView) findViewById(R.id.DimensionY);
-    private TextView dimensionZView = (TextView) findViewById(R.id.DimensionZ);
+   // private TextView dimensionXView = (TextView) findViewById(R.id.DimensionX);
+   // private TextView dimensionYView = (TextView) findViewById(R.id.DimensionY);
+   // private TextView dimensionZView = (TextView) findViewById(R.id.DimensionZ);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
