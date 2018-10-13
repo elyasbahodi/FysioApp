@@ -9,5 +9,6 @@ public class FysioApp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fysio_app);
+        // virker der 
     }
 }
